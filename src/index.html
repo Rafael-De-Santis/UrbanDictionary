@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictionary</title>
+    <!--Font Awesome-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" rel="stylesheet" >
+    <!--Tailwind-->
+    <link href="/dist/output.css" rel="stylesheet">
+</head>
+<body class="bodys">
+    <audio id="sound" src=""></audio>
+    <div class="container contains">
+
+        <div class="search-box">
+            <input type="text" placeholder="Type a word here..." id="inputWord"/>
+            <button id="searchBtn">Search</button>
+        </div>
+        <div class="result" id="result">
+            <div class="word">
+                <h3 class="resultH3" id="term">Word</h3>
+                <button class="resultBtn1 hidden" id="resultBtnLeft">
+                
+                    <i class="fa-sharp fa-solid fa-arrow-left"></i>
+                    
+                </button>
+                <span class="hidden" id="pages">Page 1 of 1</span>
+                <button class="resultBtn2 hidden" id="resultBtnRight">
+            
+                    
+                    <i class="fa-sharp fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+            <div class="details">
+            <p>Author:</p>
+            <p id="author">Funlanitow</p>
+            </div>
+            <p class="wordDefinition" id="definition">
+                Word Definition
+            </p>
+            <p class="exampleSentence" id="wordExample">
+               Word example Sentence
+            </p>
+        </div>
+
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>

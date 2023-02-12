@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.bodys{
+
+    @apply bg-emerald-600 font-mono;
+    
+}
+
+.container{
+
+    /*@apply bg-slate-300 w-72 px-60 py-20 ml-20 mt-52 md:ml-40 md:mt-40 absolute top-20 left-10 md:top-52 md:left-96 border border-black;
+    /* origin-[-50%_-50%] ???*/
+    
+    background-color: aliceblue;
+    width: 600px;
+    position: absolute;
+    transform: translate(-50%, -50%); /*alight items to the middle*/
+    top: 50%; /* this is top-Xpx tailwind alight items to the middle*/
+    left: 50%; /*this is left-Xpx alight items to the middle*/
+    padding: 80px 50px; /* p in tailwind*/
+    border-radius: 10px; /* this is rounded in tailwind*/
+    box-shadow: 0 20px 40px (38, 33, 61, 0.2); /*shadow in TW*/
+    border: solid;
+}
+
+.search-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-box input{
+    padding: 5px;
+    width: 80%;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid #044904;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.search-box button{
+    border: solid #044904;
+    border-radius: 5px;
+    background-color: #028d58;
+    padding:5px;
+    font-size: 12px;
+    font-weight: bold;
+    width: 20%;
+    margin-left: 10px;
+    color: white;
+}
+
+.result {
+    position: relative;
+}
+
+.resultH3{
+
+    @apply text-lg font-semibold text-green-900;
+
+   /**font-size: 100px;
+    font-weight: bold;*/
+
+}
+
+.word{
+    @apply flex justify-between mt-20;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+.resultBtn1{
+    @apply bg-transparent text-green-900 text-sm;
+}
+.resultBtn2{
+    @apply bg-transparent text-green-900 text-sm pl-1;
+}
+
+.details{
+    @apply flex gap-2 text-gray-300 mt-1 mb-3 text-sm;
+}
+
+.wordDefinition{
+    @apply text-gray-600 text-sm;
+}
+
+.exampleSentence{
+    @apply text-gray-400 mt-4 text-xs border-green-900 border-l-4 pl-4 italic;
+}
