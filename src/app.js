@@ -1,10 +1,3 @@
-/* const url = "https://od-api.oxforddictionaries.com/api/v2/entries/en-us/sea";
-
-
-const apiUrl = "https://od-api.oxforddictionaries.com/api/v2"
-const applicationID = "88dfd39b"
-const applicationKey = "baf28f1405243f94e7cf0ce74c8d3aee" */
-
 const options = {
 	method: 'GET',
 	headers: {
@@ -12,11 +5,6 @@ const options = {
 		'X-RapidAPI-Host': 'mashape-community-urban-dictionary.p.rapidapi.com'
 	}
 };
-
-/* fetch('https://mashape-community-urban-dictionary.p.rapidapi.com/define?term=wat', options)
-	.then(response => response.json())
-	.then(response => console.log(response))
-	.catch(err => console.error(err)); */
 
 const result = document.getElementById("result");
 const sound = document.getElementById("sound");
@@ -59,20 +47,6 @@ function setInfo(data){
     exampleWord.innerHTML = data.example.replace(/[\[\]]/g, "");
     pages.innerHTML = "Result "+(indexList+1)+" of "+list.length;
 }
-
-/* function getDef(){
-    if (indexList <= list.length) {
-        indexList++;
-        setInfo(list[indexList]);
-    }
-        
-    if (indexList >= list.length){
-        indexList--;
-        setInfo
-    }
-    
-} */
-
 
 rightBtn.addEventListener("click", () => {
     indexList++;
